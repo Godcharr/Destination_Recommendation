@@ -14,7 +14,7 @@ SOURCES += \
 
 HEADERS += \
     Widget.h
-
+QT += webenginewidgets
 FORMS += \
     Widget.ui
 
