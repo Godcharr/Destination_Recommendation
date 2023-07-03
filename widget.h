@@ -8,7 +8,6 @@
 #include <QWebEngineHistoryItem>
 #include <QWebEnginePage>
 #include <QWebEngineView>
-#include <QtWebEngineWidgets/QtWebEngineWidgets>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }

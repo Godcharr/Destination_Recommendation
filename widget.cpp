@@ -1,10 +1,11 @@
-#include "Widget.h"
+#include "widget.h"
 #include "ui_Widget.h"
 #include <QPlainTextEdit>
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QDebug>
+#include <QtNetwork>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -75,19 +76,6 @@ void Widget::onTabCloseRequested(int index)
 {
     m_tabWidget.removeTab(index);
 }
-//void Widget::loadStyleSheet(const QString &styleSheetFile){  //styleSheetFile是qss文件的Path
-//    QFile file(styleSheetFile);
-//    if(file.open(QFile::ReadOnly)){
-//        //如果在MainWindow使用了setStyleSheet，对qss文件的内容进行追加
-//        //QString styleSheet = this->styleSheet();
-//        //styleSheet += QLatin1String(file.readAll());//读取样式表文件
-//        QString styleSheet = QLatin1String(file.readAll());  //QByteArray可直接转换为QString
-//        m_tabWidget.setStyleSheet(styleSheet);
-//        file.close();
-//    }else{
-//        QMessageBox::information(this,"tip","Failed to open file");
-//    }
-//}
 Widget::~Widget()
 {
     delete ui;
