@@ -94,7 +94,7 @@ bool NumberList::Insert(int i, double val){
 }
 bool NumberList::Erase(int)
 {
-
+    return true;
 }
 //bool NumberList::Erase(T){
 
