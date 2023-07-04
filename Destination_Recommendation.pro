@@ -9,15 +9,21 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    ggenericpointer.cpp \
     json.cpp \
     main.cpp \
     numberlist.cpp \
-    widget.cpp
+    widget.cpp \
+    cJSON.c \
+    CJsonObject.cpp
 
 HEADERS += \
+    ggenericpointer.h \
     json.h \
     numberlist.h \
-    widget.h
+    widget.h \
+    cJSON.h \
+    CJsonObject.hpp
 QT += webenginewidgets
 FORMS += \
     widget.ui
